@@ -1,6 +1,9 @@
-def call() {
+def call(String microservice=null) {
     
-    sh 'docker compose down'
-    sh 'docker compose up -d || true'
-
+    if ("${microservice}" == "publisher-manager"){
+        sh 'docker compose down'
+        sh 'docker compose up -d || true'
+    } else {
+        sh 'exit 0'
+    }
 }
