@@ -4,6 +4,6 @@ def failure() {
     sh 'rm -rf ~/.m2'
     sh 'rm -rf *'
 
-    ## mais exemplos:
-    ## https://www.jenkins.io/doc/pipeline/tour/post/
+    // mais exemplos:
+    // https://www.jenkins.io/doc/pipeline/tour/post/
 }
